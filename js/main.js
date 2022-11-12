@@ -1,11 +1,11 @@
 function ex1() {
-    var soK = document.getElementById('sok').value*1;
+    var numberK = document.getElementById('sok').value*1;
 
     var rs=0;
 
-    for (var i = 1; i <= soK; i++) {
+    for (var i = 1; i <= numberK; i++) {
         rs+=i;
-        if(rs>soK){
+        if(rs>numberK){
             rs=i;
             break;
         }
@@ -15,8 +15,8 @@ function ex1() {
 }
 
 function ex2() {
-    var x = document.getElementById('sox').value*1;
-    var n = document.getElementById('son').value*1;
+    var x = document.getElementById('soX').value*1;
+    var n = document.getElementById('soN').value*1;
 
     var rs=0;
 
@@ -44,10 +44,10 @@ function in1TheDiv(bg, i) {
     return '<div class="tagDiv '+bg+' mt-2">'+i+'</div>'+'\n';
 }
 function inTheDiv() {
-    var soTheDiv = document.getElementById('sothediv').value*1;
+    var numberDiv = document.getElementById('sothediv').value*1;
     var rs='';
 
-    for (var i = 1; i <=soTheDiv; i++) {
+    for (var i = 1; i <=numberDiv; i++) {
         if(i%2===0){
             rs+=in1TheDiv('bg-danger', i);
         }else{
